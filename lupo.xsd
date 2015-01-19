@@ -1,0 +1,103 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="id" use="optional"/>
+                      <xs:attribute type="xs:string" name="desc" use="optional"/>
+                      <xs:attribute type="xs:short" name="sort" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="age_categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="id" use="optional"/>
+                      <xs:attribute type="xs:string" name="desc" use="optional"/>
+                      <xs:attribute type="xs:short" name="sort" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="games">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="game" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="title"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="keywords"/>
+                    <xs:element type="xs:string" name="fabricator"/>
+                    <xs:element type="xs:string" name="play_duration"/>
+                    <xs:element type="xs:string" name="players"/>
+                    <xs:element name="documents">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="document" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="code" use="optional"/>
+                                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                                  <xs:attribute type="xs:string" name="desc" use="optional"/>
+                                  <xs:attribute type="xs:string" name="value" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="editions">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="edition" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="index" use="optional"/>
+                                  <xs:attribute type="xs:string" name="edition" use="optional"/>
+                                  <xs:attribute type="xs:float" name="tax" use="optional"/>
+                                  <xs:attribute type="xs:string" name="acquired_date" use="optional"/>
+                                  <xs:attribute type="xs:string" name="content" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:short" name="number" use="optional"/>
+                  <xs:attribute type="xs:short" name="catid" use="optional"/>
+                  <xs:attribute type="xs:short" name="age_catid" use="optional"/>
+                  <xs:attribute type="xs:short" name="days" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:date" name="exportdate"/>
+      <xs:attribute type="xs:string" name="ludothek"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

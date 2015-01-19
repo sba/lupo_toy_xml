@@ -1,1 +1,1 @@
-# lupo_toy_xml
+# XML Definition of LUPO Toy-Export
