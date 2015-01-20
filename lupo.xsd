@@ -45,6 +45,7 @@
                     <xs:element type="xs:string" name="title"/>
                     <xs:element type="xs:string" name="description"/>
                     <xs:element type="xs:string" name="keywords"/>
+                    <xs:element type="xs:string" name="genres"/>
                     <xs:element type="xs:string" name="fabricator"/>
                     <xs:element type="xs:string" name="play_duration"/>
                     <xs:element type="xs:string" name="players"/>
