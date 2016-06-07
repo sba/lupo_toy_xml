@@ -12,6 +12,8 @@
                       <xs:attribute type="xs:short" name="id" use="optional"/>
                       <xs:attribute type="xs:string" name="desc" use="optional"/>
                       <xs:attribute type="xs:short" name="sort" use="optional"/>
+                      <xs:attribute type="xs:string" name="explanation" use="optional"/>
+                      <xs:attribute type="xs:string" name="samples" use="optional"/>
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
@@ -29,6 +31,8 @@
                       <xs:attribute type="xs:short" name="id" use="optional"/>
                       <xs:attribute type="xs:string" name="desc" use="optional"/>
                       <xs:attribute type="xs:short" name="sort" use="optional"/>
+                      <xs:attribute type="xs:string" name="explanation" use="optional"/>
+                      <xs:attribute type="xs:string" name="samples" use="optional"/>
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
