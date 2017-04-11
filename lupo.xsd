@@ -54,6 +54,8 @@
                     <xs:element type="xs:string" name="fabricator"/>
                     <xs:element type="xs:string" name="play_duration"/>
                     <xs:element type="xs:string" name="players"/>
+                    <xs:element type="xs:string" name="author"/>
+                    <xs:element type="xs:string" name="artist"/>
                     <xs:element type="xs:boolean" name="prolongable"/>
                     <xs:element name="documents">
                       <xs:complexType mixed="true">
