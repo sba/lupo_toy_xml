@@ -46,7 +46,6 @@
               <xs:element name="game" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:integer" name="id_databauer"/>
                     <xs:element type="xs:string" name="title"/>
                     <xs:element type="xs:string" name="description_title"/>
                     <xs:element type="xs:string" name="description"/>
@@ -103,7 +102,8 @@
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attribute type="xs:short" name="number" use="optional"/>
+                  <xs:attribute type="xs:integer" name="number" use="optional"/>
+				  <xs:attribute type="xs:short" name="id_databauer" use="optional"/>
                   <xs:attribute type="xs:short" name="catid" use="optional"/>
                   <xs:attribute type="xs:short" name="age_catid" use="optional"/>
                   <xs:attribute type="xs:short" name="days" use="optional"/>
